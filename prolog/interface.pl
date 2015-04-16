@@ -7,12 +7,11 @@
 :- use_module(library(http/thread_httpd)).
 :- use_module(library(http/http_dispatch)).
 :- use_module(library(http/http_parameters)).
+
 :- use_module(library(lambda)).
-:- use_module(library(mavis)).
 :- use_module(library(func)).
 :- use_module(library(typedef)).
 :- use_module(database).
-
 
 :- type user ---> user(string).
 
