@@ -1,14 +1,16 @@
 
-:- module(install_cwt_prolog, []).
+:- module(install, [install_gamehub/0]).
 /** <module> this module ensures required packs are loaded
  *
  */
+
+:- use_module(library(prolog_pack)).
 
 
 pack_deps([func, lambda]).
 
 
-main :-
+install_gamehub :-
   search(Installs),
   install_packs(Installs).
 
